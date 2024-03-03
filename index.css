@@ -1,0 +1,312 @@
+/* #303481
+#D6E6F2
+#F5F5F5
+#FFF200 */
+
+
+/* #E4FBFF
+#B8B5FF
+#7868E6
+#EDEEF7 */
+
+
+/* 
+#00203f
+#adf0d1
+#fcf7f4
+ */
+
+
+/* 
+ #114f66
+ #28829d
+ #93b7cd
+ #F0F0F8
+  */
+
+
+/* 
+#003458
+#82CDE5
+#DFF8FE
+#F01159
+ */
+
+ :root {
+    --nav-color: #7868E6;
+    --light-blue: #F01159;
+    --light-grey: #f7f9ff;
+    --light-yellow: #B8B5FF;
+    --main-border: .02rem solid var(--nav-color);
+    --border: .02rem solid magenta;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--light-grey);
+}
+
+.navbar {
+    border: .2rem solid var(--nav-color);
+    height: 4.5rem;
+    background-color: var(--nav-color);
+}
+
+.navbar p {
+    color: var(--light-grey);
+    /* border: var(--border); */
+    margin: 1.5rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-container {
+    display: flex;
+}
+
+
+/* common */
+
+.btns {
+    font-size: 1.2rem;
+    padding: .5rem;
+    background-color: var(--light-yellow);
+    color: var(--nav-color);
+    border: none;
+    border-radius: .3rem;
+}
+
+.inps {
+    border: .1rem solid var(--light-yellow);
+    height: 1.7rem;
+    border-radius: .3rem;
+}
+
+hr {
+    width: 97%;
+    border: .01rem solid var(--nav-color);
+}
+
+
+/* left-container */
+
+.left-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-head {
+    /* border: var(--border); */
+    padding: 1rem;
+}
+
+.new-q {
+    margin-left: 2rem;
+}
+
+.left-head input {
+    width: 15rem;
+    margin-left: 5rem;
+}
+
+.tab-btn {
+    font-size: .8rem;
+    width: 7rem;
+    margin-left: 2rem;
+    background-color: transparent;
+    border: .02rem solid var(--light-yellow);
+    /* opacity: .65; */
+}
+
+.active {
+    opacity: 1;
+}
+
+.list-q {
+    max-height: 70vh;
+    overflow-y: scroll;
+    border: var(--main-border);
+    width: 95%;
+    margin-left: 2rem;
+    /* border: var(--border); */
+}
+
+#list-quest-res {
+    display: none;
+}
+
+#list-quest-fav {
+    display: none;
+}
+
+.list-item {
+    margin: .5rem 1rem;
+}
+
+.list-item h4 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.list-item p {
+    margin: 0.2rem 0;
+}
+
+.date-time {
+    font-size: .8rem;
+    margin: 0 1rem;
+}
+
+.reaction {
+    display: flex;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.reaction p {
+    padding: 0 1rem;
+}
+
+
+/* right container */
+
+.right-container {
+    width: 50%;
+}
+
+.right-head {
+    margin-top: 5rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.input-q {
+    width: 75%;
+    margin: 1rem 5rem;
+    /* border: var(--border); */
+}
+
+.input-q input {
+    width: 45%;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.input-q textarea {
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 1rem;
+    border: .1rem solid var(--light-yellow);
+    border-radius: .3rem;
+}
+
+.question-box {
+    /* border: var(--border); */
+    display: none;
+    width: 90%;
+    margin-left: 2rem;
+    max-height: 75vh;
+    overflow-y: scroll;
+}
+
+.question-box h4 {
+    margin: 1rem 0;
+}
+
+.quest-head {
+    display: flex;
+    min-height: 2rem;
+    margin-left: 1.5rem;
+    width: 90%;
+    border: var(--main-border);
+    padding: .5rem;
+    /* border: var(--border); */
+}
+
+.vote-btns {
+    margin: .5rem;
+}
+
+.vote-btns button {
+    width: 5rem;
+    padding: .5rem 0;
+    background-color: var(--light-yellow);
+    color: var(--nav-color);
+    border: none;
+    border-radius: .3rem;
+}
+
+.vote-btns p {
+    text-align: center;
+}
+
+.headings {
+    float: left;
+    width: 70%;
+}
+
+.fav-vote {
+    float: right;
+}
+
+.response-box {
+    min-height: 2rem;
+    width: 85%;
+    margin-left: 1.5rem;
+    border: var(--main-border);
+    padding: 1rem;
+    /* border: var(--border); */
+}
+
+.response-box h5 {
+    text-align: right;
+}
+
+.add-res {
+    width: 85%;
+    margin-left: 1.5rem;
+}
+
+.add-res input {
+    width: 45%;
+}
+
+.add-res textarea {
+    width: 100%;
+    height: 10rem;
+}
+
+.add-res button {
+    margin-left: 26rem;
+}
+
+.resolve-btn {
+    margin: .5rem 1.5rem;
+    margin-left: 29rem;
+}
+
+@media screen and (max-width:750px) {
+    .main-container {
+        flex-direction: column-reverse;
+    }
+    .left-container {
+        width: 100%;
+    }
+    .right-container {
+        width: 100%;
+    }
+    .left-head {
+        padding: .5rem;
+    }
+    .new-q {
+        margin-left: .2rem;
+        width: 10rem;
+        font-size: 1rem;
+    }
+    .left-head input {
+        width: 10rem;
+        margin-left: .2rem;
+    }
+}

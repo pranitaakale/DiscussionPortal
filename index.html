@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--  Reference: https://projects.codequotient.com/project/02-03-2021-3p34g81bt6l09jhx5j -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Portal</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <p>Discussion Portal</p>
+    </div>
+    <div class="main-container">
+
+
+        <!-- LEFT_PANE -->
+        <div class="left-container">
+            <div class="left-head">
+                <button class="new-q btns" id="new-q-btn">New Question Form</button>
+                <input class="inps" placeholder="Search a question..." id="search-inp" />
+            </div>
+            <div class="quest-content">
+                <button class="btns tab-btn active" onclick="openPanel('all')">All</button>
+                <button class="btns tab-btn" onclick="openPanel('favs')">Favourite</button>
+                <button class="btns tab-btn" onclick="openPanel('res')">Resolved</button>
+                <div class="list-q" id="list-quest">Question List is Empty!</div>
+                <div class="list-q" id="list-quest-fav">Favourites Question List is Empty!</div>
+                <div class="list-q" id="list-quest-res">Resolved Question List is Empty!</div>
+            </div>
+        </div>
+        <!-- END_LEFT_PANE -->
+
+
+        <!-- RIGHT_PANE -->
+        <div class="right-container">
+            <div id="quest-form">
+                <div class="right-head">
+                    <h2>Welcome to Discussion Portal !</h2>
+                    <p>Enter a subject and question to get started</p>
+                </div>
+
+                <div class="input-q">
+                    <form method="" action="">
+                        <input class="inps" placeholder="Subject" id="inp-q-subj" />
+                        <textarea id="inp-q"></textarea>
+                        <button type="button" class="btns" id="inp-q-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="question-box" id="q-box">
+                <h4>Question</h4>
+                <div class="quest-head">
+                    <div class="vote-btns">
+                        <button class="upV_btn">Upvote</button>
+                        <p id="voteCount">0</p>
+                        <button class="DownV_btn">Downvote</button>
+                    </div>
+                    <div class="headings">
+                        <h4 id="title-q"></h4>
+                        <p id="descr-q"></p>
+                    </div>
+                    <div class="fav-vote">
+                        <button class="btns tab-btn add-fav">Add Fav</button>
+                    </div>
+                </div>
+                <button class="btns resolve-btn">Resolve</button>
+                <h4>Responses</h4>
+                <div class="response-box"></div>
+                <h4>Add response</h4>
+                <form class="add-res">
+                    <input class="inps" id="res-inp" placeholder="Name" />
+                    <textarea id="res-text"></textarea>
+                    <button class="btns res-btn" type="button">Submit</button>
+                </form>
+            </div>
+        </div>
+        <!-- END_RIGHT_PANE -->
+
+
+    </div>
+</body>
+<script src="index.js" defer></script>
+
+</html>
